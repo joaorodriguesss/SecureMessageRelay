@@ -1,0 +1,2 @@
+-user MSG_CLI2.p12 askqueue
+send MSG_CLI2 teste

@@ -1,0 +1,8 @@
+[Unit]
+Description= My Daemon
+
+[Service]
+ExecStart=/home/fikiling/Desktop/Universidade/3ano/2sem/SSI/2324-G29/Guioes/S10/test_daemon
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Start Concordia Daemon
+After=network.target concordia-prep.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/concordia_daemon
+User=root
+Group=root
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

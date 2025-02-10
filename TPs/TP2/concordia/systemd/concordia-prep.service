@@ -1,0 +1,13 @@
+[Unit]
+Description=Create Concordia runtime directory
+Before=concordia.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/mkdir -p /var/run/concordia
+ExecStart=/bin/chown daemon_user:daemon_user /var/run/concordia
+ExecStart=/bin/chmod 0755 /var/run/concordia
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
